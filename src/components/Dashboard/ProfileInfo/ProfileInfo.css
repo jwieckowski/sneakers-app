@@ -1,0 +1,49 @@
+.info__container {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__user {
+  padding-left: 20px;
+}
+
+.info__buttons {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.info__buttons button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  color: black;
+  background: transparent;
+  transition: border 0.3s ease 0s, color 0.3s ease 0s;
+  will-change: border, color;
+}
+
+.info__buttons button:hover {
+  cursor: pointer;
+  border: 2px solid #DC143C;
+  color: #DC143C;
+}
+
+.large__text {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.small__text {
+  font-size: 14px;
+  color: #3a3333;
+}

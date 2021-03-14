@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in 0s;
+  will-change: color;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #DC143C;
+}

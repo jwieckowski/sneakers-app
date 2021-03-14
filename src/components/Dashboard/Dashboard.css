@@ -1,0 +1,9 @@
+.dashboard__container{
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard__content {
+  height: 92%;
+  width: 100%;
+}

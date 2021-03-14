@@ -1,0 +1,81 @@
+.menu__container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+.menu__logo__container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__logo__container img {
+  width: 70%;
+  max-width: 200px;
+  transition: transform 0.3s ease 0s;
+  will-change: transform;
+}
+
+.menu__logo:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(-30deg);
+}
+
+
+.menu__list {
+  width: 80%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__list__item {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5,
+    -7px 8px #808d93,
+    -8px 7px #cdd2d5;
+  transition: color 0.2s ease-in 0s, transform 0.2s ease-in 0s;
+  will-change: color transform;
+}
+
+.menu__list__item:hover {
+  cursor: pointer;
+  color: #DC143C;
+  transform: scale(1.1) translateY(5px);
+}
+
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__link__active {
+  color: #DC143C;
+  transform: scale(1.1) translateY(5px);
+}

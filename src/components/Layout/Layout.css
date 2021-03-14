@@ -1,0 +1,28 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 800px;
+}
+
+.content__background {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  background-image: url('https://i.pinimg.com/originals/85/51/83/8551837b3a4f0faf6465ad1ef6ddbc6d.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  min-width: 700px;
+  background-color: whitesmoke;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
