@@ -23,10 +23,10 @@ export default function Menu() {
           <Link to='/statistics' className='menu__link'>Statistics</Link>
         </li>
         <li className='menu__list__item'>
-          <Link to='/contact' className='menu__link'>Contact</Link>
+          <Link to='/about' className='menu__link'>About</Link>
         </li>
         <li className='menu__list__item'>
-          <Link to='/about' className='menu__link'>About</Link>
+          <Link to='/contact' className='menu__link'>Contact</Link>
         </li>
       </ul>
     </div>

@@ -1,0 +1,25 @@
+.contact__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.contact__container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__text {
+    padding-top: 20px;
+    width: 80%;
+}
+
+.contact__element {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
