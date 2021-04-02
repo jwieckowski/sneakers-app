@@ -3,6 +3,7 @@ import './ProductsList.css'
 import useProductsState from '../../../../store/products.js'
 import ProductItem from './ProductItem/'
 import ProductDetails from './ProductDetails'
+import Modal from '../../UI/Modal'
 
 const getProductsList = (products) => {
   if (products.length === 0) return 'No match results...'
@@ -27,6 +28,7 @@ export default function ProductsList () {
           : getProductsList(products)
       }
       <ProductDetails />
+      <Modal />
     </div>
   )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
+import './Statistics.css'
+
+import PriceChart from './PriceChart'
 
 export default function Statistics () {
   return (
-    <div>
-    statistics
+    <div className='statistics__container'>
+      <PriceChart />
     </div>
   )
 }

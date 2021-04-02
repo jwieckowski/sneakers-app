@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Dashboard.css'
 import { useLocation } from 'react-router-dom'
+
+import useUserState from '../../store/user.js'
+import useBoughtProductState from '../../store/bought.js'
+import useObservedProductState from '../../store/observed.js'
+import useSoldProductState from '../../store/sold.js'
 
 import ProfileInfo from './ProfileInfo'
 import Home from './Home'
@@ -22,7 +27,17 @@ const getContent = (path) => {
 }
 
 export default function Dashboard () {
+  const [{ user }, ] = useUserState()
+  const [, { getBoughtProducts } ] = useBoughtProductState()
+  const [, { getObservedProducts } ] = useObservedProductState()
+  const [, { getSoldProducts } ] = useSoldProductState()
   const location = useLocation()
+
+  useEffect(() => {
+    getBoughtProducts(user)
+    getObservedProducts(user)
+    getSoldProducts(user)
+  }, [])
 
   return (
     <div className='dashboard__container'>

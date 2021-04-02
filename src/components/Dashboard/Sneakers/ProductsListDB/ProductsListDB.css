@@ -1,0 +1,10 @@
+.products__list__db__container {
+    width: 80%;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.products__list__db__header {
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,6 @@
+.chart__container {
+    min-width: 500px;
+    min-height: 500px;
+    width: 80%;
+    height: 60%;
+}

@@ -6,7 +6,9 @@ const Store = createStore({
     products: [],
     loading: false,
     error: '',
-    activeProduct: undefined
+    activeProduct: undefined,
+    activeModalProduct: undefined,
+    modalType: undefined
   },
   actions: {
     getProducts: (product, limit) => async({ setState, getState }) => {
@@ -34,6 +36,12 @@ const Store = createStore({
     setActiveProduct: (product) => ({ setState }) => {
       setState({
         activeProduct: product
+      })
+    },
+    setActiveModalProduct: (product, type) => ({ setState }) => {
+      setState({
+        activeModalProduct: product,
+        modalType: type
       })
     }
   },

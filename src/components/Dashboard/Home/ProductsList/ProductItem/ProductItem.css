@@ -32,3 +32,30 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.product__item__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product__item__button {
+    width: 80px;
+    padding: 5px 0;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid black;
+    outline: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product__item__button:hover {
+    cursor: pointer;
+}
+
+.product__item__button__active {
+    border: 2px solid #227711;
+    color: #227711;
+}
